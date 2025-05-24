@@ -41,3 +41,13 @@ with open(import_file, newline='', encoding='utf-8') as imported:
                     file.write('\t</Sonderausgaben>\n')
         
         file.write('</SonderausgabenUebermittlung>\n')
+
+"""
+Überreste des Originalskripts für pandas
+base_df = pd.read_excel(path)
+clean_df = base_df[
+    (base_df["Gesamt\nSumme"] > 0) &
+    (pd.isna(base_df["übermittelt"])) &
+    (pd.notna(base_df["vbPK"]))
+]
+"""
